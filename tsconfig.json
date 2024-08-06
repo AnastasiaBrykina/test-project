@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "ES6", //Версия стандарта ECMAScript, в которую будет скомпилирован код
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "baseUrl": "./src",
+    "strict": true
+  }
+}
