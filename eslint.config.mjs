@@ -22,6 +22,11 @@ export default [
         ...globals.es2016,
       },
     },
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
     // rules: {
     //   // ... any rules you want
     //   "@typescript-eslint/no-require-imports": [

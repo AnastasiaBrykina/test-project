@@ -1,12 +1,12 @@
-import { styled } from "@linaria/react";
+import { RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import { appRouter } from "./appRouter";
+import { appStore } from "./appStore";
 
-// в отдельный компонент?
-const Div = styled.div`
-  color: red;
-`;
-
-const App = () => {
-  return <Div>test</Div>;
+export const App = () => {
+  return (
+    <Provider store={appStore}>
+      <RouterProvider router={appRouter} />
+    </Provider>
+  );
 };
-
-export { App };
