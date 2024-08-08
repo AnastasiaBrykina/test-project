@@ -1,15 +1,13 @@
-# 🚀 Welcome to your new awesome project!
+# Running locally
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
+1. Install dependencies
 
 ```
-yarn build
+npm install
 ```
 
-to bundle your application
+2. Start development server
+
+```
+npm run dev
+```
