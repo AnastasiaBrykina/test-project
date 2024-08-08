@@ -8,6 +8,7 @@
     "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix .",
     "dev": "npx webpack serve",
+    "dev:backend": "docker-compose up",
     "build": "webpack",
     "prepare": "husky install"
   },
