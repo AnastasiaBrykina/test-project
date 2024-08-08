@@ -19,7 +19,7 @@ export default [
         ...globals.browser,
         ...globals.node,
         ...globals.amd,
-        ...globals.es2016,
+        ...globals.es2022,
       },
     },
     settings: {
