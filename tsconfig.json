@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true, //Позволяет использовать синтаксис импорта по умолчанию
-    "noImplicitAny": true, //выдавать ошибку при попытке использования переменной или параметра без явного указания типа
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
     "module": "ESNext",
-    "target": "ES6", //Версия стандарта ECMAScript, в которую будет скомпилирован код
-    "jsx": "react-jsx", //не требует явного импорта React
-    "moduleResolution": "node", //TypeScript ищет модули в node_modules
-    "allowJs": true, //Разрешать компиляцию файлов JavaScript, Проверять типы в файлах JavaScript
-    "baseUrl": "./src", // базовый URL для разрешения модулей. Это позволяет вам использовать абсолютные пути вместо относительных
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "baseUrl": "./src",
     "strict": true,
     "paths": {
       "@app/*": ["app/*"],
@@ -15,6 +15,6 @@
       "@components/*": ["components/*"]
     }
   },
-  "include": ["src/**/*"], //какие файлы и директории следует включать в процесс компиляции TypeScript.
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

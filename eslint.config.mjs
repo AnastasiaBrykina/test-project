@@ -5,7 +5,7 @@ import pluginReact from "eslint-plugin-react";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
 export default [
-  { ignores: ["webpack.config.js"] },
+  { ignores: ["webpack.config.js", "node_modules", "dist"] },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
@@ -27,12 +27,5 @@ export default [
         version: "detect",
       },
     },
-    // rules: {
-    //   // ... any rules you want
-    //   "@typescript-eslint/no-require-imports": [
-    //     "error",
-    //     { allow: ["/webpack.config.js$"] },
-    //   ],
-    // },
   },
 ];

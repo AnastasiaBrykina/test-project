@@ -8,6 +8,7 @@
     "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix .",
     "dev": "npx webpack serve",
+    "build": "webpack",
     "prepare": "husky install"
   },
   "lint-staged": {
