@@ -8,7 +8,7 @@
     "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix .",
     "dev": "npx webpack serve",
-    "dev:backend": "docker-compose up",
+    "dev:backend": "docker-compose up -d mock-json",
     "build": "webpack",
     "prepare": "husky install"
   },
@@ -49,6 +49,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@webpack-cli/generators": "^3.0.7",
+    "@wyw-in-js/babel-preset": "^0.5.4",
     "@wyw-in-js/webpack-loader": "^0.5.4",
     "babel-loader": "^9.1.3",
     "babel-plugin-module-resolver": "^5.0.2",

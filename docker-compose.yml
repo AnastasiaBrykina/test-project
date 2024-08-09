@@ -11,6 +11,7 @@ services:
     command: npm run dev
   mock-json:
     image: "ajoelpod/mock-json-server"
+    profiles: ["mock-backend"]
     volumes:
       - ./data.json:/usr/src/app/data.json
     ports:
