@@ -14,6 +14,7 @@ const config = {
   devServer: {
     open: true,
     host: "0.0.0.0",
+    historyApiFallback: true,
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -69,6 +70,8 @@ const config = {
       "@app": path.resolve(__dirname, "src/app/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
+      "@features": path.resolve(__dirname, "src/features"),
+      "@shared": path.resolve(__dirname, "src/shared"),
     },
     extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
   },

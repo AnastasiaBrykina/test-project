@@ -12,7 +12,9 @@
     "paths": {
       "@app/*": ["app/*"],
       "@pages/*": ["pages/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@features/*": ["features/*"],
+      "@shared/*": ["shared/*"]
     }
   },
   "include": ["src/**/*"],

@@ -1,8 +1,8 @@
 {
   "presets": [
+    ["@babel/preset-env"],
     ["@babel/preset-typescript", { "isTSX": true, "allExtensions": true }],
     ["@babel/preset-react", { "runtime": "automatic" }],
-    ["@babel/preset-env"],
     ["@wyw-in-js"]
   ],
   "plugins": [
@@ -13,7 +13,9 @@
         "alias": {
           "@app": "./src/app",
           "@pages": "./src/pages",
-          "@components": "./src/components"
+          "@components": "./src/components",
+          "@features": "./src/features",
+          "@shared": "./src/shared"
         }
       }
     ]

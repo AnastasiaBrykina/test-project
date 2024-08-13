@@ -1,17 +1,17 @@
 services:
-  app:
+  # app-prod имя контейнера
+  app-prod:
     build:
+      # путь до Dockerfile
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - "8080:8080"
+      - "8080:80"
     volumes:
-      - .:/app
-      - /app/node_modules
-    command: npm run dev
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+
   mock-json:
     image: "ajoelpod/mock-json-server"
-    profiles: ["mock-backend"]
     volumes:
       - ./data.json:/usr/src/app/data.json
     ports:
